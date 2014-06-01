@@ -1,0 +1,23 @@
+h1 {
+	margin: .8em 0;
+}
+
+textarea#taurl {
+	height: 40vh;
+}
+
+button#bgo {
+	display: block;
+	margin: .6em auto;
+}
+
+small {
+	color: #777;
+}
+
+img.ghimg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+}

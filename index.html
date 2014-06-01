@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>URL2Drop</title>
+
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+	<div class="modal fade" id="mprog" tabindex="-1" role="dialog" aria-labelledby="progressModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="progressModalLabel">Progress</h4>
+				</div>
+				<div class="modal-body">
+					<p id="pprog"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<a class="hidden-xs" href="https://github.com/Tomfox91/url2drop"><img class="ghimg" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
+	<div class="container">
+		<h1 class="text-center">URL2Drop</h1>
+
+		<p>Enter URLs that you want transferred in your Dropbox in the area below. You can specify up to 100 URLs. You can decide where the files will be saved in the popup window. Optionally, you can specify the file name after each URL.</p>
+
+		<textarea id="taurl" class="form-control resrel" rows="3" placeholder="http://www.example.com/some-file.pdf A long file name.pdf"></textarea>
+
+		<button type="button" class="btn btn-primary btn-lg" id="bgo">Save</button>
+
+		<p><small>This page only forwards your URLs to Dropbox; only Dropbox sees your URLs' contents. This page is not affiliated with Dropbox. Dropbox and the Dropbox logo are trademarks of Dropbox, Inc.</small></p>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="1ngyh652woxckcc"></script>
+	<script src="js.js"></script>
+</body>
+</html>
