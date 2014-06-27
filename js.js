@@ -20,7 +20,7 @@ $('#bgo').on('click', function() {
 			return true;
 		}
 	}).map(function(line) {
-		var a = line.match(/^([^ ]+)( (.*))?$/);
+		var a = line.match(/^([^ ]+)( +(.*))?$/);
 		var url = a[1];
 		var name = a[3];
 
